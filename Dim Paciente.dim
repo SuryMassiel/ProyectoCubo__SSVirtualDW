@@ -1,0 +1,260 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5357d652-4599-4ef3-916b-d948b468bb95" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Paciente</ID>
+  <Name>Dim Paciente</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1065" scrolltop="-3668" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7955" y="11800" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Paciente" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5327" height="4004" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf140000a40f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Paciente" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1065</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3668</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ab61160b-29fa-4c34-b87a-995a1d0ee2ba">
+    <DataSourceViewID>SS Virtual DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="71f827b9-9c00-4d8b-bd76-40c490092ee7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c2de7d57-9572-458d-acb0-0f3e84858101">
+      <ID>Paciente Key</ID>
+      <Name>Paciente Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24036e90-8f10-49c6-813e-1255d97fdc05">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3912e005-479b-4bbe-ae6a-ce69f84ae918">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Paciente_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1fb4e451-cfa4-40f7-95e8-e4eee1cb7944">
+          <AttributeID>Nombre COMPLETO Pacientes</AttributeID>
+          <Name>Nombre COMPLETO Pacientes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27fca880-443d-4ba6-9d3b-1480f03ddba6">
+          <AttributeID>Sexo Pacientes</AttributeID>
+          <Name>Sexo Pacientes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6c197191-28cb-4326-8fc9-40cd9fff4d7a">
+          <AttributeID>Edad Pacientes</AttributeID>
+          <Name>Edad Pacientes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50fa3d95-b134-4b89-827f-b8e53f3227aa">
+          <AttributeID>Alergias Pacientes</AttributeID>
+          <Name>Alergias Pacientes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49850eea-36fe-4a54-ae10-61338379cd89">
+          <AttributeID>Nombre Completo Tutor</AttributeID>
+          <Name>Nombre Completo Tutor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98d824f9-68ea-4f72-8068-af519f674f10">
+          <AttributeID>Sexo Tutor</AttributeID>
+          <Name>Sexo Tutor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae956a27-28ac-47fd-839e-e5e41c70a8f4">
+          <AttributeID>Edad Tutor</AttributeID>
+          <Name>Edad Tutor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="15383e2b-64fe-4223-b5dc-8e9a10dd8708">
+          <AttributeID>Ocupacion Tutor</AttributeID>
+          <Name>Ocupacion Tutor</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fcf0a1bd-6138-49c7-84ce-5f4a81f28327">
+      <ID>Nombre COMPLETO Pacientes</ID>
+      <Name>Nombre COMPLETO Pacientes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e2e0f93f-77f1-49ca-a8ea-fd54fa7a7b71">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13002bae-7d72-4bba-b9a6-011d160e1420">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Nombre_COMPLETO_Pacientes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="07bff855-8744-45aa-a5d7-e52ef617ac81">
+      <ID>Sexo Pacientes</ID>
+      <Name>Sexo Pacientes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b6d5fc3-b5f0-4307-ba2d-692f93b7580d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b38aadfd-9dce-49a7-9460-ec7e97813445">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Sexo_Pacientes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="01cdc7c0-f04d-49bc-a0f7-f5b1aa92c49b">
+      <ID>Edad Pacientes</ID>
+      <Name>Edad Pacientes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bbb51eb5-8246-490c-860e-6a51f47e5f35">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8010a0ef-cf06-46b1-8310-aa16c1b08434">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Edad_Pacientes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02c8974e-bb3d-4b82-8afa-0821f53d4ea8">
+      <ID>Alergias Pacientes</ID>
+      <Name>Alergias Pacientes</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b7141d5-3166-45e6-8ab3-aebb139185df">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="110c730a-a9c4-4540-bee6-cb071e1b937a">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Alergias_Pacientes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="991b4189-6166-4d19-8e66-93ea2630f1d9">
+      <ID>Nombre Completo Tutor</ID>
+      <Name>Nombre Completo Tutor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92ed4ca4-9a18-43d2-b8a6-a1af96730e12">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="756314ca-ecc2-4a1a-b334-6c02d982d2c7">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Nombre_Completo_Tutor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="028a8e65-d9aa-406f-a67c-8a73a5ba4e32">
+      <ID>Sexo Tutor</ID>
+      <Name>Sexo Tutor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f19806b5-8678-465d-97c2-62d8ed6bd51a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a15aafa-212d-43a6-81a4-8fff6e31a941">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Sexo_Tutor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1a0c6e72-7f7a-4d57-81a8-5b0bedaacf72">
+      <ID>Edad Tutor</ID>
+      <Name>Edad Tutor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61f945ea-63f0-4f7d-a67d-25978369c09f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b95bf7d8-b456-4d63-8010-1dee71c32a21">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Edad_Tutor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58931574-1771-4a5b-ad07-0ac3add717c0">
+      <ID>Ocupacion Tutor</ID>
+      <Name>Ocupacion Tutor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="925c5d56-1669-47a1-94ab-6ceb81bd4a5d">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8f0601d-971d-4127-8d4f-7f3b0ec04023">
+            <TableID>dbo_Dim_Paciente</TableID>
+            <ColumnID>Ocupacion_Tutor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

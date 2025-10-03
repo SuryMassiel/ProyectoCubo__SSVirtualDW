@@ -1,0 +1,835 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cdc7e086-826f-4198-9451-f57ca3837832" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SS Virtual DW</ID>
+  <Name>SS Virtual DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="13" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5270" scrolltop="3072" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="21043" y="11818" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Paciente" left="2340" top="17285" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5327" height="4004" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf140000a40f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Paciente" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Tiempo" left="6246" top="6593" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Tiempo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_EstadoCita" left="20" top="12644" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3157" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000550c0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_EstadoCita" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_CitaPediatrica" left="5577" top="11939" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="4339" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f3100000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_CitaPediatrica" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000210a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_sysdiagrams" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Razon" left="10067" top="17285" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3087" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000f0c0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Razon" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_PersonalMedico" left="12316" top="11939" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="4568" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d8110000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_PersonalMedico" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4604" top="14585" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="2342" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Cita_Paciente]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="8" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5003" y="17285" />
+              <point x="5003" y="16085" />
+              <point x="6646" y="16085" />
+              <point x="6646" y="14885" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7347" top="9040" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Cita_Fecha]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7746" y="9539" />
+              <point x="7746" y="11939" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2877" top="13012" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Cita_Estado]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3177" y="13411" />
+              <point x="4377" y="13411" />
+              <point x="4377" y="13412" />
+              <point x="5577" y="13412" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7996" top="14585" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="4014" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Cita_Razon]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11610" y="17285" />
+              <point x="11610" y="16085" />
+              <point x="8296" y="16085" />
+              <point x="8296" y="14885" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9616" top="13013" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Cita_PersonalMedico]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12316" y="13412" />
+              <point x="9916" y="13412" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5270</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3072</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="f54d0eac-4273-4abb-a68c-130daa1385f8">
+      <ID>Dim Estado Cita</ID>
+      <Name>Dim Estado Cita</Name>
+      <DimensionID>Dim Estado Cita</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="51da81f4-020f-481c-91c8-9686d598629d">
+          <AttributeID>Estado Cita Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73238e4a-c881-4aff-9849-6930fa99987e">
+          <AttributeID>Estado</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2629ee5e-2c33-412c-86bc-9ee7e76443c8">
+      <ID>Dim Paciente</ID>
+      <Name>Dim Paciente</Name>
+      <DimensionID>Dim Paciente</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bf41eb20-7a5a-4169-a2e2-fa1429435acf">
+          <AttributeID>Paciente Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77a25a6e-b9f6-445a-b896-ba96e5956e99">
+          <AttributeID>Nombre COMPLETO Pacientes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fa209fa-9b6a-429a-b7ff-3f69f81d101a">
+          <AttributeID>Sexo Pacientes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b19a7f39-a1a8-4a1a-add2-a0642776d8c5">
+          <AttributeID>Edad Pacientes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47687e02-aa88-4db3-8548-20d158a0e461">
+          <AttributeID>Alergias Pacientes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1d124a4-9074-4585-8ba8-8b5db0ce9389">
+          <AttributeID>Nombre Completo Tutor</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2470145-be92-45a5-8f57-512027f69437">
+          <AttributeID>Sexo Tutor</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b6fac31-b7a4-4052-8381-8511fb657032">
+          <AttributeID>Edad Tutor</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="656a62c1-3be3-437c-9342-4500a0e9a8d7">
+          <AttributeID>Ocupacion Tutor</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2db5282d-6ef1-47c8-9e21-65cb678f6d38">
+      <ID>Dim Personal Medico</ID>
+      <Name>Dim Personal Medico</Name>
+      <DimensionID>Dim Personal Medico</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dba8f818-9d3e-4328-b245-64032a9f231b">
+          <AttributeID>Personal Medico Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94c7c820-9811-4619-b04d-f8d53c38a05c">
+          <AttributeID>Nombre Completo Medico</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f23cd3c-6578-4c9e-b79d-d99fc4d019e9">
+          <AttributeID>Sexo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6075045-8a10-438c-99c9-9421d9fc0804">
+          <AttributeID>Edad</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a1cb1ab-4e8a-490d-ae67-56c034fcff06">
+          <AttributeID>Dependencia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e91e6c9-8800-49d4-a97a-2f7a4a923953">
+          <AttributeID>Cargo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4ba75457-2a23-460e-a9cf-ebafc5db2523">
+      <ID>Dim Razon</ID>
+      <Name>Dim Razon</Name>
+      <DimensionID>Dim Razon</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e343edb6-36c9-4057-bdff-218e4c63967d">
+          <AttributeID>Razon Cita Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7af256ac-c0ac-4406-8eb2-c28c2f8a6937">
+          <AttributeID>Razon Cita</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="814491aa-1db9-4f90-b584-752d4c80f8cb">
+      <ID>Dim Tiempo</ID>
+      <Name>Dim Tiempo</Name>
+      <DimensionID>Dim Tiempo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="313fbb95-65d3-42c7-8666-f0d6c61b50f9">
+          <AttributeID>Tiempo Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8094f18e-ab53-46ad-a658-9b3a4b780966">
+          <AttributeID>Fecha</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b903382-6a29-44f0-8e86-9da5df5f88a9">
+          <AttributeID>Semana</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39c6e582-4be3-4862-b565-5ff0dd330ed7">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ca46d00-508d-4cea-ace9-f706072b8b18">
+          <AttributeID>Anio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bae9daa4-395f-4bf1-a105-49cf12badd48">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f654779f-ff3f-45f0-a9de-a7f4781da7ef">
+      <ID>Sysdiagrams</ID>
+      <Name>Sysdiagrams</Name>
+      <DimensionID>Sysdiagrams</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8e06028e-f434-4fa5-8de0-3fbe82bc3a9b">
+          <AttributeID>Diagram Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="e876438b-6a13-474e-9924-f4d194bc0ce5">
+      <ID>Dim Estado Cita</ID>
+      <Name>Dim Estado Cita</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="49407d23-679f-4ec4-a45f-32e06bde897c">
+          <ID>Recuento Dim Estado Cita</ID>
+          <Name>Recuento Dim Estado Cita</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="654c39e3-2d43-4e57-a625-08d172862b46">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="92e04e3d-5f12-4452-935f-06b9d78359dc">
+              <TableID>dbo_Dim_EstadoCita</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1feb8697-6b5a-4d25-96f9-c910d3a9f2bc">
+          <CubeDimensionID>Dim Estado Cita</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="653ec082-7e37-4a3f-a91f-964583d2e4a6">
+              <AttributeID>Estado Cita Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="690227e1-e2e9-48cd-9285-80ca23393943">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="812d3226-5f95-46f9-8a98-2518ec03d7e5">
+                    <TableID>dbo_Dim_EstadoCita</TableID>
+                    <ColumnID>Estado_cita_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c7c05d90-065e-4d81-9a70-f45e15a87711">
+      <ID>Dim Paciente</ID>
+      <Name>Dim Paciente</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="543d826e-b098-47fe-a743-39e2a206cb00">
+          <ID>Edad Pacientes</ID>
+          <Name>Edad Pacientes</Name>
+          <Source dwd:design-time-name="d34a9879-f72c-4363-bcf1-b839345fedb0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7cb7fac1-9f20-4ea0-86c3-55d5edfa5bc7">
+              <TableID>dbo_Dim_Paciente</TableID>
+              <ColumnID>Edad_Pacientes</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="698610d0-a877-4096-a614-6c48aa1bc2d6">
+          <ID>Edad Tutor</ID>
+          <Name>Edad Tutor</Name>
+          <Source dwd:design-time-name="576fbfe6-d948-42c2-875a-47ff80049f88">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b9b2564f-f699-418d-8a37-4b77a9946c18">
+              <TableID>dbo_Dim_Paciente</TableID>
+              <ColumnID>Edad_Tutor</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="975a307e-7453-4e8c-a286-dfac75e092c4">
+          <ID>Recuento Dim Paciente</ID>
+          <Name>Recuento Dim Paciente</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9c68c0a4-a120-4aec-9bd9-7783f26d6655">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6605dfcc-2fb6-4f7a-b5d8-78d2c90a7f49">
+              <TableID>dbo_Dim_Paciente</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="ca1f0bc2-51c7-4ebe-aef0-6188294c2be5">
+          <CubeDimensionID>Dim Paciente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e13259e-71b4-4afa-8f2c-ceb96b941f43">
+              <AttributeID>Paciente Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a5c36eb2-b69e-48d3-a266-0a2e9c1f82cd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a8541bd-0cc6-468b-a6b3-ab3c0c992548">
+                    <TableID>dbo_Dim_Paciente</TableID>
+                    <ColumnID>Paciente_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a58c00d8-22e0-4667-b429-d159444b9109">
+      <ID>Dim Personal Medico</ID>
+      <Name>Dim Personal Medico</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fc10ba16-f57d-4d60-afb7-1d656173837f">
+          <ID>Edad</ID>
+          <Name>Edad</Name>
+          <Source dwd:design-time-name="7e60d66c-1501-453d-938c-92de6b3386d8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="df7f87f3-5f2d-42a0-915a-977509ecffb7">
+              <TableID>dbo_Dim_PersonalMedico</TableID>
+              <ColumnID>Edad</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="32a2cf8a-81d6-4bcb-b4e6-a7c2f50494db">
+          <ID>Recuento Dim Personal Medico</ID>
+          <Name>Recuento Dim Personal Medico</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a68f3358-5a51-4de5-b78f-edf80ea74a35">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e2eb8cc9-72ad-4fd2-a041-3004884caa54">
+              <TableID>dbo_Dim_PersonalMedico</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7cf27451-de19-4da4-9d2b-c1f4c6352190">
+          <CubeDimensionID>Dim Personal Medico</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="937ad3b4-5635-4d64-84f2-f64fa3679a37">
+              <AttributeID>Personal Medico Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5d76eeb0-c90e-4aec-b5b4-be0554730d95">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d1a46dbf-6a10-4413-a6f2-2414ec9f967a">
+                    <TableID>dbo_Dim_PersonalMedico</TableID>
+                    <ColumnID>Personal_Medico_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8bf03194-5541-4c1f-868d-dd037cb8a851">
+      <ID>Dim Razon</ID>
+      <Name>Dim Razon</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="744d0d33-7d4f-4cc2-a580-26492aa400a8">
+          <ID>Recuento Dim Razon</ID>
+          <Name>Recuento Dim Razon</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="cf4abf83-7fc4-4613-9127-06dae03fa13f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4fe02b6d-5fcf-46b2-8529-401598535aa8">
+              <TableID>dbo_Dim_Razon</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="311162df-aeed-4eab-8ea8-6b3d20b33c8c">
+          <CubeDimensionID>Dim Razon</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2470b78f-1bbf-4dbe-a174-c29792c1f838">
+              <AttributeID>Razon Cita Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="84d835ea-f1fa-491e-b630-a90d887f01a8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d3b0ec33-2aee-43e9-b9ff-f80fee7d278a">
+                    <TableID>dbo_Dim_Razon</TableID>
+                    <ColumnID>Razon_cita_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b43a17b3-bc3d-4de9-a81b-5a65f01854a7">
+      <ID>Dim Tiempo</ID>
+      <Name>Dim Tiempo</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="be5b9443-08a8-45fe-8b59-1ddd1f6d2c3e">
+          <ID>Semana</ID>
+          <Name>Semana</Name>
+          <Source dwd:design-time-name="15b29dde-00db-4d95-bfcb-b0ab40f56f8f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fd83723c-d53d-4ec2-8baf-8933e1baa2c5">
+              <TableID>dbo_Dim_Tiempo</TableID>
+              <ColumnID>Semana</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="afdc9f24-5562-424e-ac8a-bed98425bf03">
+          <ID>Anio</ID>
+          <Name>Anio</Name>
+          <Source dwd:design-time-name="c5b046ed-4415-45f8-a624-d52e99f7dacf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7c8e3edf-c769-42a8-a4ab-8f281279f130">
+              <TableID>dbo_Dim_Tiempo</TableID>
+              <ColumnID>Anio</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2e397f80-b03a-4762-b3fd-965744694495">
+          <ID>Trimestre</ID>
+          <Name>Trimestre</Name>
+          <Source dwd:design-time-name="8059203e-bbe1-46bf-ae9e-7cddc8476a96">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="02a2ecac-19dd-438d-a00d-44fd71e794de">
+              <TableID>dbo_Dim_Tiempo</TableID>
+              <ColumnID>Trimestre</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fb757eb8-676c-4011-a80d-a5f7503bdeec">
+          <ID>Recuento Dim Tiempo</ID>
+          <Name>Recuento Dim Tiempo</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f1677442-f366-4be7-8de0-766b5e5d0f03">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5164ee49-2901-4696-adeb-cbc84c37a119">
+              <TableID>dbo_Dim_Tiempo</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0780e159-97f5-49cf-a49f-42e8a807a57f">
+          <CubeDimensionID>Dim Tiempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cced5ed0-0e7f-4d8d-9d75-1c4874339e21">
+              <AttributeID>Tiempo Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="450a38dc-2392-45cb-9bc0-48424b32a5d4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0be98044-a38c-4839-b38e-47bcfb4646be">
+                    <TableID>dbo_Dim_Tiempo</TableID>
+                    <ColumnID>Tiempo_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="485c9d9e-bc4e-47fe-9b13-60630fcfb5b6">
+      <ID>Fact Cita Pediatrica</ID>
+      <Name>Fact Cita Pediatrica</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e4edd3b6-4ba9-4066-898e-d2d2b36aefc8">
+          <ID>Recuento Fact Cita Pediatrica</ID>
+          <Name>Recuento Fact Cita Pediatrica</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="42e213b9-6df7-4268-b2d6-068df6da6eb0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0e1e6f38-54af-4fe1-a22a-8c697cd72e73">
+              <TableID>dbo_Fact_CitaPediatrica</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="da334e67-b384-447b-8aa2-7953ca81738c">
+          <CubeDimensionID>Dim Paciente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2fb661a3-3594-475b-8702-2220512eb006">
+              <AttributeID>Paciente Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="06548e1f-9e83-4232-adfa-8e209d709add">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="013736e8-a3a6-4482-93fc-c998fc051a2d">
+                    <TableID>dbo_Fact_CitaPediatrica</TableID>
+                    <ColumnID>Paciente_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07005179-addb-4c6e-8184-24a578e18c57">
+          <CubeDimensionID>Dim Razon</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="81589218-ec45-4cf5-b5f1-335da243d5b5">
+              <AttributeID>Razon Cita Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ed3c5ab2-04e0-4b46-819e-79c08847a285">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79e351a4-6616-48f9-947b-d8450b872751">
+                    <TableID>dbo_Fact_CitaPediatrica</TableID>
+                    <ColumnID>Razon_cita_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2280f370-b5fc-49b3-ae98-9be6398060c8">
+          <CubeDimensionID>Dim Personal Medico</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="18bcbf1d-60d5-4fc9-bd64-4aa796142721">
+              <AttributeID>Personal Medico Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="679c6327-d6aa-4435-809c-ac05f395b379">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2caa9789-fd04-43ef-bc79-8f55ed8954e7">
+                    <TableID>dbo_Fact_CitaPediatrica</TableID>
+                    <ColumnID>Personal_Medico_Key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="94b42669-8db6-49fe-b567-1f9aa17ff10a">
+          <CubeDimensionID>Dim Estado Cita</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a3ef2a9d-f8e3-4571-988e-6b8f876b8a2a">
+              <AttributeID>Estado Cita Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="694dd8c9-60a6-4550-88cb-94cd428ab3bd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e9bc16a-90d7-452c-b9a0-f9948ef66cf8">
+                    <TableID>dbo_Fact_CitaPediatrica</TableID>
+                    <ColumnID>Estado_cita_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5e4939a5-ed91-4625-8b7d-ef966823388a">
+          <CubeDimensionID>Dim Tiempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="311c47c3-f362-4598-aaa8-31e266b5477d">
+              <AttributeID>Tiempo Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0adad78d-9b40-41c6-97bb-9b40450273ea">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e55f112-4537-46dd-ba4f-fac7a8897515">
+                    <TableID>dbo_Fact_CitaPediatrica</TableID>
+                    <ColumnID>Fecha_key</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="1023e991-a59f-42b0-bd0c-08f3fc0d0f3c">
+      <ID>Sysdiagrams</ID>
+      <Name>Sysdiagrams</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7317805a-cb5d-470d-b044-685064b62fbc">
+          <ID>Principal Id</ID>
+          <Name>Principal Id</Name>
+          <Source dwd:design-time-name="6582d20f-1758-41a9-966d-903a580cf777">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2468520a-770d-4994-99a4-5ac6282c8405">
+              <TableID>dbo_sysdiagrams</TableID>
+              <ColumnID>principal_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d88d1623-42dd-4af2-ba7d-9f92819164f2">
+          <ID>Version</ID>
+          <Name>Version</Name>
+          <Source dwd:design-time-name="ca82652a-ee7b-4857-9b95-39bcca7dc2d3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="894738c2-b44e-4895-a552-eb6a9dc2677e">
+              <TableID>dbo_sysdiagrams</TableID>
+              <ColumnID>version</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="00e8e4b9-380f-4942-8da9-19c9ca3c4c42">
+          <ID>Recuento Sysdiagrams</ID>
+          <Name>Recuento Sysdiagrams</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e16b227f-cacf-4a95-9e24-0b5931beab03">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="328182c5-ad9b-48ea-adf7-e288e650978c">
+              <TableID>dbo_sysdiagrams</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="80a239da-b53b-4af4-a705-303625cfaaf9">
+          <CubeDimensionID>Sysdiagrams</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="994f9d63-6c42-43de-b179-ee06eec316fc">
+              <AttributeID>Diagram Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="60bd10cb-8342-43c4-8083-43afdd9ae8ac">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c6a8af0-f41c-4947-8919-13c4625a374c">
+                    <TableID>dbo_sysdiagrams</TableID>
+                    <ColumnID>diagram_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ed586055-c2e2-49f5-9960-08d08723ab05">
+    <DataSourceViewID>SS Virtual DW</DataSourceViewID>
+  </Source>
+</Cube>
