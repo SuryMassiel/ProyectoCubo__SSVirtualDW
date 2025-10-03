@@ -26,9 +26,6 @@
       <Dimension>
         <ID>Dim Tiempo</ID>
       </Dimension>
-      <Dimension>
-        <ID>Sysdiagrams</ID>
-      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
@@ -79,14 +76,6 @@
             <Partitions>
               <Partition>
                 <ID>Fact Cita Pediatrica</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Sysdiagrams</ID>
-            <Partitions>
-              <Partition>
-                <ID>Sysdiagrams</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

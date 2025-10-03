@@ -4,7 +4,7 @@
       <Name>Development</Name>
       <Options>
         <TargetServer>(local)</TargetServer>
-        <TargetDatabase>ProyectoCubo__SSVirtualDW</TargetDatabase>
+        <TargetDatabase>ProyectoCubo_SVirtualDW</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
